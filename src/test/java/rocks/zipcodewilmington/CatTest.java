@@ -16,7 +16,7 @@ public class CatTest {
     // TODO - Create tests for `void setName(String name)`
     @Test
     public void testSetName(){
-        Cat cat = new Cat("",null,null);
+        Cat cat = new Cat(null,null,null);
         String expected = "Kitty";
         cat.setName(expected);
         String actual = cat.getName();
@@ -27,7 +27,7 @@ public class CatTest {
     // TODO - Create tests for `speak`
     @Test
     public void testSpeak(){
-        Cat cat = new Cat("",null,null);
+        Cat cat = new Cat(null,null,null);
         String expected = "meow!";
         String actual = cat.speak();
         Assert.assertEquals(expected, actual);
@@ -37,7 +37,7 @@ public class CatTest {
     // TODO - Create tests for `setBirthDate(Date birthDate)`
     @Test
     public void testSetBirthDate(){
-        Cat cat = new Cat("",null,null);
+        Cat cat = new Cat(null,null,null);
 
         Date expected = new Date(2016,10,20);
         cat.setBirthDate(expected);
@@ -50,7 +50,7 @@ public class CatTest {
     // TODO - Create tests for `void eat(Food food)`
     @Test
     public void testEat(){
-        Cat cat = new Cat("",null,null);
+        Cat cat = new Cat(null,null,null);
         Food food = new Food();
         cat.eat(food);
         Assert.assertTrue(cat.getNumberOfMealsEaten() > 0);
@@ -61,7 +61,7 @@ public class CatTest {
     // TODO - Create tests for `Integer getId()`
     @Test
     public void testGetId(){
-        Cat cat = new Cat("",null,89456);
+        Cat cat = new Cat(null,null,89456);
         int expected = 89456;
         int actual = cat.getId();
         Assert.assertEquals(expected, actual);
@@ -71,7 +71,7 @@ public class CatTest {
     // TODO - Create test to check Animal inheritance; google search `java instanceof keyword`
     @Test
     public void testAnimalInheritance(){
-        Cat cat = new Cat("",null,null);
+        Cat cat = new Cat(null,null,null);
 
         Assert.assertTrue(cat instanceof Cat);
     }
@@ -80,7 +80,7 @@ public class CatTest {
     // TODO - Create test to check Mammal inheritance; google search `java instanceof keyword`
     @Test
     public void testMammalInheritance(){
-        Cat cat = new Cat("",null,null);
+        Cat cat = new Cat(null,null,null);
 
         Assert.assertTrue(cat instanceof Mammal);
     }
